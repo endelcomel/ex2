@@ -1,8 +1,11 @@
 [build]
-  command = "npm start"
-  publish = "dist"
+  command = "npm install" # Install dependensi
+  publish = "public"     # Folder statis (jika ada)
 
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/server"
   status = 200
+
+[functions]
+  directory = "functions" # Direktori untuk serverless functions
